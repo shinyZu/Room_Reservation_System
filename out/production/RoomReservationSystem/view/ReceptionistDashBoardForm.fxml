@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="contextReceptionistDashboard" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistDashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="166.0" style="-fx-background-color: #222831;">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="71.0" layoutX="45.0" layoutY="14.0">
+               <image>
+                  <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/signInIcon.png" />-->
+                  <Image url="@../assets/images/profileImageIcon.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="14.0" layoutY="115.0" prefHeight="2.0" prefWidth="133.0" />
+            <Separator layoutX="14.0" layoutY="525.0" prefHeight="2.0" prefWidth="133.0" />
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="292.0" onAction="#goToMaintenanceOnAction" prefHeight="29.0" prefWidth="127.0" style="-fx-background-radius: 05; -fx-background-color: #30475E;" text="MAINTENANCE" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Group layoutX="10.0" layoutY="526.0">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="19.0">
+                     <image>
+                        <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/linkedin.png" />-->
+                        <Image url="@../assets/images/linkedinIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="60.0" layoutY="10.0">
+                     <image>
+                        <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/instagram.png" />-->
+                        <Image url="@../assets/images/instagramIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="24.0" layoutX="89.0" layoutY="9.0">
+                     <image>
+                        <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/facebook.png" />-->
+                        <Image url="@../assets/images/facebookIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="119.0" layoutY="10.0">
+                     <image>
+                        <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/gmail.png" />-->
+                        <Image url="@../assets/images/gmailIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="4.0" layoutY="10.0">
+                     <image>
+                        <!--<Image url="@../../../../../../Downloads/1486395874-settings_80622.png" />-->
+                        <Image url="@../assets/images/settingsIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Group>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="250.0" onAction="#goToReservationsOnAction" prefHeight="29.0" prefWidth="127.0" style="-fx-background-radius: 05; -fx-background-color: #30475E;" text="RESERVATIONS" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="18.0" layoutY="166.0" onAction="#goToHotelRoomsOnAction" prefHeight="29.0" prefWidth="127.0" style="-fx-background-radius: 05; -fx-background-color: #30475E;" text="ROOMS" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="125.0" prefHeight="29.0" prefWidth="127.0" style="-fx-background-radius: 05; -fx-background-color: white;" text="DASHBOARD" textAlignment="RIGHT">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text fill="WHITE" layoutX="47.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECEPTIONIST">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="18.0" layoutY="208.0" onAction="#goToGuestsOnAction" prefHeight="29.0" prefWidth="127.0" style="-fx-background-radius: 05; -fx-background-color: #30475E;" text="GUESTS" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="25.0" layoutY="133.0">
+               <image>
+                  <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/dashboard.png" />-->
+                  <Image url="@../assets/images/dashboardIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="COLOR_BURN" fitHeight="18.0" fitWidth="16.0" layoutX="24.0" layoutY="172.0">
+               <image>
+                  <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/room.png" />-->
+                  <Image url="@../assets/images/roomIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="COLOR_BURN" fitHeight="23.0" fitWidth="21.0" layoutX="22.0" layoutY="211.0">
+               <image>
+                  <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/guests.png" />-->
+                  <Image url="@../assets/images/guestIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="22.0" layoutY="296.0">
+               <image>
+                  <!--<Image url="@../../../../../../Downloads/tool_113298.png" />-->
+                  <Image url="@../assets/images/maintenanceToolIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="21.0" layoutY="253.0">
+               <image>
+                  <!--<Image url="@../../../../../../Downloads/calendar-check_icon-icons.com_56836.png" />-->
+                  <Image url="@../assets/images/reservationIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="receptionistProfile" fitHeight="59.0" fitWidth="71.0" layoutX="45.0" layoutY="14.0" onMouseClicked="#goToReceptionistProfile">
+         <image>
+            <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/signInIcon.png" />-->
+            <Image url="@../assets/images/profileImageIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+     <!-- <Group layoutX="12.0" layoutY="342.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="19.0">
+               <image>
+                  <Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/linkedin.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="60.0" layoutY="10.0">
+               <image>
+                  <Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/instagram.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="24.0" layoutX="89.0" layoutY="9.0">
+               <image>
+                  <Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/facebook.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="119.0" layoutY="10.0">
+               <image>
+                  <Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/gmail.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="4.0" layoutY="10.0">
+               <image>
+                  <Image url="@../../../../../../Downloads/1486395874-settings_80622.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Group>-->
+      <AnchorPane layoutX="166.0" prefHeight="44.0" prefWidth="1034.0" style="-fx-background-color: #30475E;">
+         <children>
+            <Text fill="WHITE" layoutX="475.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="557.0" fitWidth="1034.0" layoutX="166.0" layoutY="44.0">
+         <image>
+            <Image url="@../assets/images/finalContentPane.png" />
+         </image>
+      </ImageView>
+     <!-- <ImageView fitHeight="356.0" fitWidth="451.0" layoutX="166.0" layoutY="44.0">
+         <image>
+            <Image url="@../../../../../../Pictures/Screenshot%20from%202021-07-03%2021-35-56.png" />
+         </image>
+      </ImageView>-->
+   </children>
+</AnchorPane>

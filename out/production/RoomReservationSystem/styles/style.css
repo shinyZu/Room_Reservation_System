@@ -1,0 +1,16 @@
+.txtSignUpAdminFirstName, .txtSignUpAdminLastName, .txtSignUpAdminEmail, .txtSignUpAdminPassword{
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: WHITE;
+}
+.txtSignUpReceptionistFirstName, .txtSignUpReceptionistLastName, .txtSignUpReceptionistEmail, .txtSignUpReceptionistPassword{
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: WHITE;
+}
+.txtLoginAdminFirstName, .txtLoginAdminLastName, .txtLoginAdminEmail, .txtLoginAdminPassword{
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: WHITE;
+}
+.txtLoginReceptionistFirstName, .txtLoginReceptionistLastName, .txtLoginReceptionistEmail, .txtLoginReceptionistPassword{
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: WHITE;
+}

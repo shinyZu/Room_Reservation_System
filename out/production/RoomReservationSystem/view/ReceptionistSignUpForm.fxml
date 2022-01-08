@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextReceptionistSignUp" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistSignUpFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="284.0" layoutY="168.0" onAction="#signUpAsAdminOnAction" prefHeight="36.0" prefWidth="316.0" style="-fx-background-radius: 15; -fx-background-color: #636E72;" text="Admin" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b2adad" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="563.0" layoutY="98.0" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Rasa" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSignUpReceptionistFName" focusColor="WHITE" labelFloat="true" layoutX="288.0" layoutY="244.0" prefHeight="26.0" prefWidth="300.0" promptText="First Name*" styleClass="txtSignUpAdminFirstName" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtSignUpReceptionistLName" focusColor="WHITE" labelFloat="true" layoutX="610.0" layoutY="244.0" prefHeight="26.0" prefWidth="300.0" promptText="Last Name*" styleClass="txtSignUpAdminLastName" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtSignUpReceptionistEmail" focusColor="WHITE" labelFloat="true" layoutX="288.0" layoutY="300.0" prefHeight="26.0" prefWidth="623.0" promptText="Email Address*" styleClass="txtSignUpAdminEmail" unFocusColor="WHITE" />
+      <JFXCheckBox checkedColor="WHITE" layoutX="288.0" layoutY="400.0" prefHeight="18.0" prefWidth="115.0" text="Remember me" textFill="WHITE" unCheckedColor="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <Label layoutX="821.0" layoutY="402.0" text="Forgot Password?" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="774.0" layoutY="459.0" onAction="#signUpReceptionistOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: F19066; -fx-background-radius: 15;" text="Sign Up" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b2adad" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Rasa SemiBold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="288.0" layoutY="484.0" text="Already Registered?" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="lblLoginReceptionist" layoutX="391.0" layoutY="481.0" onAction="#goToReceptionistLogin" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Hyperlink>
+      <JFXButton layoutX="600.0" layoutY="168.0" prefHeight="36.0" prefWidth="316.0" style="-fx-background-radius: 15; -fx-background-color: F19066;" text="Receptionist" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b2adad" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtSignUpReceptionistPassword" focusColor="WHITE" labelFloat="true" layoutX="288.0" layoutY="354.0" prefHeight="26.0" prefWidth="623.0" promptText="Password*" styleClass="txtSignUpAdminPassword" unFocusColor="WHITE" />
+   </children>
+</AnchorPane>

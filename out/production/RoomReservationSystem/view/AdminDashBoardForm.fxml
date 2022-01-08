@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="contextAdminDashboard" prefHeight="599.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="166.0" style="-fx-background-color: #222831;">
+         <children>
+            <ImageView fx:id="adminProfile" fitHeight="59.0" fitWidth="71.0" layoutX="45.0" layoutY="14.0" onMouseClicked="#goToAdminProfile">
+               <image>
+                 <!-- <Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/signInIcon.png" />-->
+                  <Image url="@../assets/images/profileImageIcon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="WHITE" layoutX="61.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN">
+               <font>
+                  <Font size="10.0" />
+               </font></Text>
+            <Separator layoutX="18.0" layoutY="108.0" prefHeight="2.0" prefWidth="133.0" />
+            <Group layoutX="12.0" layoutY="543.0" />
+            <Group layoutX="2.0" layoutY="270.0">
+               <children>
+                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="16.0" layoutY="11.0" onAction="#goToIncomeReportsOnAction" prefHeight="29.0" prefWidth="127.0" style="-fx-background-color: #30475E; -fx-background-radius: 05;" text="INCOME REPORTS" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView blendMode="COLOR_BURN" fitHeight="18.0" fitWidth="15.0" layoutX="18.0" layoutY="17.0">
+                     <image>
+                        <!--<Image url="@../../../../../../Downloads/files-1_icon-icons.com_48613.png" />-->
+                        <Image url="@../assets/images/incomeReportsIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="231.0" onAction="#goToMealPkgOnAction" prefHeight="29.0" prefWidth="127.0" style="-fx-background-color: #30475E; -fx-background-radius: 05;" text="MEAL PACKAGES" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="180.0" onAction="#goToRoomsOnAction" prefHeight="29.0" prefWidth="127.0" style="-fx-background-color: #30475E; -fx-background-radius: 05;" text="ROOMS" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="132.0" prefHeight="29.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 05;" text="DASHBOARD" textAlignment="RIGHT">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="21.0" layoutY="141.0">
+               <image>
+                  <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/dashboard.png" />-->
+                  <Image url="@../assets/images/dashboardIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="COLOR_BURN" fitHeight="18.0" fitWidth="15.0" layoutX="21.0" layoutY="186.0">
+               <image>
+                  <!--<Image url="@../../../../../../../../media/shiny/B242768842765159/IJSE/Academics/Software%20Engineering/UI-UX/BlueOceanHotel-images/room.png" />-->
+                  <Image url="@../assets/images/roomIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="COLOR_BURN" cache="true" fitHeight="18.0" fitWidth="16.0" layoutX="23.0" layoutY="237.0">
+               <image>
+                  <!--<Image url="@../../../../../../Downloads/food_cutlery_icon_180976.png" />-->
+                  <Image url="@../assets/images/mealIcon.png" />
+               </image>
+            </ImageView>
+            <Group layoutX="16.0" layoutY="529.0">
+               <children>
+                  <Separator layoutX="1.0" prefHeight="2.0" prefWidth="133.0" />
+                  <Group layoutY="14.0">
+                     <children>
+                        <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="19.0">
+                           <image>
+                              <Image url="@../assets/images/linkedinIcon.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="60.0" layoutY="10.0">
+                           <image>
+                              <Image url="@../assets/images/instagramIcon.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" layoutX="89.0" layoutY="9.0">
+                           <image>
+                              <Image url="@../assets/images/facebookIcon.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="119.0" layoutY="10.0">
+                           <image>
+                              <Image url="@../assets/images/gmailIcon.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="4.0" layoutY="10.0">
+                           <image>
+                              <Image url="@../assets/images/settingsIcon.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="166.0" prefHeight="43.0" prefWidth="1034.0" style="-fx-background-color: #30475E;">
+         <children>
+            <Text fill="WHITE" layoutX="475.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD" />
+         </children></AnchorPane>
+      <Group layoutX="192.0" layoutY="208.0" />
+      <Group layoutX="185.0" layoutY="147.0" />
+      <ImageView fitHeight="557.0" fitWidth="1034.0" layoutX="166.0" layoutY="43.0">
+         <image>
+            <!--<Image url="@../../../../../../Pictures/Screenshot%20from%202021-07-03%2021-35-56.png" />-->
+            <Image url="@../assets/images/finalContentPane.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
